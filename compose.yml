@@ -1,0 +1,8 @@
+services:
+  arm-ref:
+    build: .
+    image: arm.jonpalmisc:2026-11-24-v1
+    ports:
+      - "8045:80"
+#    volumes: ["./arm-ref/arm.jonpalmisc.com:/usr/share/nginx/html:ro"]
+    restart: unless-stopped
